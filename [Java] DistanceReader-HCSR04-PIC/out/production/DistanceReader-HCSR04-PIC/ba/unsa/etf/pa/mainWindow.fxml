@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPane" maxHeight="330.0" maxWidth="500.0" minHeight="330.0" minWidth="500.0" prefHeight="330.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.pa.MainController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="distanceText" alignment="CENTER" editable="false" focusTraversable="false" mouseTransparent="true" text="Distance to nearest obstacle is:">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="centimetersText" alignment="CENTER" editable="false" focusTraversable="false" maxHeight="190.0" minHeight="190.0" mouseTransparent="true" prefHeight="190.0" text="22cm" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ETF Sarajevo, 2020" GridPane.rowIndex="2">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="15.0" />
+         </GridPane.margin>
+      </Text>
+   </children>
+</GridPane>
